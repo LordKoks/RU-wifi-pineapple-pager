@@ -32,8 +32,7 @@ chmod +x /etc/rc.local
 
 ### 4. Перезапустите интерфейс
 killall -9 pineapple
-sleep 2
-/pineapple/pineapple &
+
 
 ## Примечания
 - Тема адаптирована под размеры экрана (уменьшены шрифты).
