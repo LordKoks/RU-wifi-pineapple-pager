@@ -1,6 +1,6 @@
 # Русская тема для WiFi Pineapple Pager
 
-Полностью переведённая на русский язык тема wargames для WiFi Pineapple Pager от Hak5.
+Частично переведённая на русский язык тема wargames для WiFi Pineapple Pager от Hak5.
 
 ## Что переведено
 
