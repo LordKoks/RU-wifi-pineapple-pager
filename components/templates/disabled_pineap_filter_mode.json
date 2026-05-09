@@ -1,0 +1,16 @@
+{
+  "enabled": [
+    {
+      "text": "Р Р°Р·СЂРµС€РёС‚СЊ",
+      "text_size": "medium",
+      "text_color_palette": "disabled_light_gray"
+    }
+  ],
+  "disabled": [
+    {
+      "text": "Р—Р°РїСЂРµС‚РёС‚СЊ",
+      "text_size": "medium",
+      "text_color_palette": "disabled_light_gray"
+    }
+  ]
+}

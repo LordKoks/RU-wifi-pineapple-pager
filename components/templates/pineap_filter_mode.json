@@ -1,0 +1,35 @@
+{
+  "enabled": [
+    {
+      "text": "Р Р°Р·СЂРµС€РёС‚СЊ",
+      "text_size": "medium",
+      "text_color_palette": "green",
+      "center_text_within": {
+        "draw_bounds": true,
+        "start_x": 365,
+        "end_x": 385,
+        "start_y": 206,
+        "end_y": 218
+      }
+    },
+    {
+      "image_path": "assets/swap.png",
+      "x": 72,
+      "y": 2,
+      "recolor_palette": "gray"
+    }
+  ],
+  "disabled": [
+    {
+      "text": "Р—Р°РїСЂРµС‚РёС‚СЊ",
+      "text_size": "medium",
+      "text_color_palette": "red"
+    },
+    {
+      "image_path": "assets/swap.png",
+      "x": 72,
+      "y": 2,
+      "recolor_palette": "gray"
+    }
+  ]
+}

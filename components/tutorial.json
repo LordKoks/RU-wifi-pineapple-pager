@@ -1,0 +1,531 @@
+{
+  "screen_name": "tutorial",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "noop",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "background_color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    },
+    "layers": [
+      {
+        "image_path": "assets/messagebox.png",
+        "x": 12,
+        "y": 56
+      },
+      {
+        "image_path": "assets/pager-16bit.png",
+        "x": 30,
+        "y": 80
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "tut0",
+          "button_map": {
+            "a": "select",
+            "b": "noop",
+            "up": "noop",
+            "down": "next",
+            "left": "noop",
+            "right": "noop"
+          },
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "1 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Дважды нажмите кнопку питания, чтобы\nоткрыть меню быстрого доступа. Отсюда\nможно в любое время заблокировать экран\nили выключить Pager. Нажмите B или\nкнопку питания ещё раз, чтобы закрыть."
+            },
+            {
+              "x": 50,
+              "y": 7,
+              "image_path": "assets/arrow_up.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "tut1",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "2 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Кнопка 'A' (зелёная) обычно используется\nдля взаимодействия с выбранным элементом.\n\nКнопка 'B' (красная) обычно служит\nдля возврата к предыдущему экрану."
+            },
+            {
+              "x": 50,
+              "y": 175,
+              "image_path": "assets/arrow_down.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "menu_items": [
+        {
+          "id": "tut2",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "3 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Кнопки направления (D-Pad) позволяют\nвыбирать элементы на экране и переме-\nщаться по меню. Цвет их светодиодов\nможно настраивать через полезные\nнагрузки или в меню Настройки >\nОсновное > Подсветка D-Pad."
+            },
+            {
+              "x": 370,
+              "y": 175,
+              "image_path": "assets/arrow_down.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "menu_items": [
+        {
+          "id": "tut3",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "4 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Строка состояния показывает время,\nуровень заряда, громкость, яркость\nи статус вибрации.\n\nВ режиме Разведка строка состояния\nотображает GPS, базу данных, PCAP\nи частоту."
+            },
+            {
+              "x": 300,
+              "y": 25,
+              "image_path": "assets/arrow_up.png"
+            },
+            {
+              "x": 251,
+              "y": 5,
+              "image_path": "assets/statusbar/vibrate.png"
+            },
+            {
+              "x": 286,
+              "y": 5,
+              "image_path": "assets/statusbar/dashboard_brightness_7.png",
+              "recolor_palette": "blue"
+            },
+            {
+              "x": 317,
+              "y": 5,
+              "image_path": "assets/statusbar/volume_high.png"
+            },
+            {
+              "x": 346,
+              "y": 5,
+              "image_path": "assets/statusbar/dashboard_battery_charge_75.png"
+            },
+            {
+              "x": 400,
+              "y": 7,
+              "text": "1:37 PM",
+              "text_color_palette": "blue",
+              "text_size": "small"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 4,
+      "menu_items": [
+        {
+          "id": "tut4",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "5 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "У Pager три основных компонента:\nPineAP, Разведка и Полезные нагрузки.\n\nЕсли вы знакомы с WiFi Pineapple или\nустройствами Hak5, это покажется\nзнакомым. Давайте разберёмся."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 5,
+      "menu_items": [
+        {
+          "id": "tut5",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "6 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "PineAP — это движок, позволяющий\nпроводить WiFi-атаки. Помимо захвата\nхендшейков, можно имитировать\nоткрытые и WPA-сети, оставаясь в\nрамках задания, используя фильтрацию\nклиентов и сетей."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 6,
+      "menu_items": [
+        {
+          "id": "tut6",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "7 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Разведка показывает радиоэфир\nнаглядно с графикой, звуками и\nполезными данными. Проводите\nwardriving, сохраняйте захваты\nпакетов и взаимодействуйте с\nWiFi-средой через полезные нагрузки.\nКстати о нагрузках..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 7,
+      "menu_items": [
+        {
+          "id": "tut7",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "8 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Полезные нагрузки — это простые\nскрипты на Bash и DuckyScript,\nпозволяющие использовать мощь Linux\nна Pager.\n\nСуществует три вида нагрузок:\nОповещения, Пользовательские и\nРазведка."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 8,
+      "menu_items": [
+        {
+          "id": "tut8",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "9 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Оповещающие нагрузки автоматически\nзапускаются при событиях в эфире —\nнапример, при обнаружении деаут-\nфлуда, захвате новых хендшейков\nили подключении клиентов к ложной\nточке доступа WiFi Pineapple Pager."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 9,
+      "menu_items": [
+        {
+          "id": "tut9",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "10 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Пользовательские нагрузки можно\nзапускать в любое время из меню\nПанель > Полезные нагрузки. Там\nвы найдёте репозиторий нагрузок,\nсозданных сообществом, а также\nдокументацию по написанию собственных\nна https://hak5.org/pager\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 10,
+      "menu_items": [
+        {
+          "id": "tut10",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "11 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Нагрузки Разведки — особый тип,\nкоторые выполняются против цели,\nнаблюдаемой в Разведке.\n\nС помощью них можно легко\nвзаимодействовать с WiFi-средой."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 11,
+      "menu_items": [
+        {
+          "id": "tut11",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "12 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "В Настройках находится множество\nфункций, например, «Виртуальный\nPager». Он позволяет взаимодейство-\nвать с Pager, получать доступ к\nтерминалу, скачивать добычу и\nмногое другое через браузер по\nUSB-C или WiFi через Точку доступа\nуправления."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 12,
+      "menu_items": [
+        {
+          "id": "tut11",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "13 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Точка доступа управления — это\nчастная WiFi-сеть вашего WiFi\nPineapple Pager. Она предназначена\nдля доступа оператора к интерфейсам\nSSH и Virtual Pager. Настройте её\nв разделе Настройки > Сеть."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 13,
+      "menu_items": [
+        {
+          "id": "tut12",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "14 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Вы можете подключить Pager к\nИнтернету из раздела Сеть в меню\nНастройки. Прокрутите вниз до\nНастройки режима клиента и\nследуйте мастеру. Затем включите\nс помощью переключателя «Режим\nклиента» в любое время.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 14,
+      "menu_items": [
+        {
+          "id": "tut13",
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "15 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "После подключения к Интернету через\nрежим WiFi-клиента рекомендуется\nпроверить обновления прошивки в\nменю Настройки > Обновления.\nУбедитесь, что установлен часовой\nпояс, дата и время для стабильного\nсетевого соединения."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 15,
+      "menu_items": [
+        {
+          "id": "tut14",
+          "button_map": {
+            "a": "back",
+            "b": "back",
+            "up": "previous",
+            "down": "back",
+            "left": "noop",
+            "right": "noop"
+          },
+          "selected_layers": [
+            {
+              "x": 400,
+              "y": 40,
+              "text": "16 of 16",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 128,
+              "y": 74,
+              "text_color_palette": "black",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10,
+              "text": "Это основа — теперь исследуйте.\nПолная документация, библиотека\nнагрузок, рингтонов, тем и\nсообщество WiFi Pineapple Pager:\n\nhttps://hak5.org/pager"
+            }
+          ],
+          "target": "back"
+        }
+      ]
+    }
+  ]
+}

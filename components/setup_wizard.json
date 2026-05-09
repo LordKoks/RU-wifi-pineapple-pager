@@ -1,0 +1,978 @@
+{
+  "screen_name": "setup_wizard",
+  "windowed_canvas": false,
+  "cache_canvases": false,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "noop",
+    "right": "noop"
+  },
+  "background": {
+    "background_color": {
+      "r": 0,
+      "g": 0,
+      "b": 0
+    }
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "page0_bg",
+          "unselectable": true,
+          "layers": [
+            {
+              "image_path": "assets/pager-16bit.png",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "x": 25,
+              "y": 100,
+              "text_size": "small",
+              "text_color_palette": "green",
+              "text": "Добро пожаловать"
+            },
+            {
+              "x": 25,
+              "y": 120,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Уведомления"
+            },
+            {
+              "x": 25,
+              "y": 140,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "PIN-код"
+            },
+            {
+              "x": 25,
+              "y": 160,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Пароль"
+            },
+            {
+              "x": 25,
+              "y": 180,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Часовой пояс"
+            },
+            {
+              "x": 25,
+              "y": 200,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Лицензия"
+            },
+            {
+              "image_path": "assets/triangle.png",
+              "x": 3,
+              "y": 100,
+              "recolor_palette": "green"
+            }
+          ]
+        },
+        {
+          "id": "setup0",
+          "selected_layers": [
+            {
+              "image_path": "assets/flame.png",
+              "recolor_palette": "green",
+              "x": 119,
+              "y": 17
+            },
+            {
+              "x": 142,
+              "y": 10,
+              "text": "ДОБРО ПОЖАЛОВАТЬ, ХАКЕР",
+              "text_color_palette": "green",
+              "text_size": "medium",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x": 117,
+              "y": 60,
+              "text": "Добро пожаловать в WiFi Pineapple Pager.\n\nДавайте начнём с ознакомления\n\nс важными уведомлениями\n\nи настройки устройства.",
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x": 117,
+              "y": 185,
+              "text": "Нажмите вниз для продолжения.",
+              "text_color_palette": "green",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "page1_bg",
+          "unselectable": true,
+          "layers": [
+            {
+              "image_path": "assets/pager-16bit.png",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "x": 25,
+              "y": 100,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Добро пожаловать"
+            },
+            {
+              "x": 25,
+              "y": 120,
+              "text_size": "small",
+              "text_color_palette": "green",
+              "text": "Уведомления"
+            },
+            {
+              "x": 25,
+              "y": 140,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "PIN-код"
+            },
+            {
+              "x": 25,
+              "y": 160,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Пароль"
+            },
+            {
+              "x": 25,
+              "y": 180,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Часовой пояс"
+            },
+            {
+              "x": 25,
+              "y": 200,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Лицензия"
+            },
+            {
+              "image_path": "assets/triangle.png",
+              "x": 3,
+              "y": 120,
+              "recolor_palette": "green"
+            }
+          ]
+        },
+        {
+          "id": "setup1",
+          "selected_layers": [
+            {
+              "image_path": "assets/warning.png",
+              "recolor_palette": "green",
+              "x": 112,
+              "y": 13
+            },
+            {
+              "x": 142,
+              "y": 10,
+              "text": "УВЕДОМЛЕНИЕ: Прошивка",
+              "text_color_palette": "green",
+              "text_size": "medium",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x": 117,
+              "y": 60,
+              "text": "Добро пожаловать на передовую.\n\nНовые функции выходят\n\nчасто. Оставляйте отзывы\n\nи присоединяйтесь к сообществу:\n\nhttps://hak5.org/pager",
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 2,
+      "menu_items": [
+        {
+          "id": "page2_bg",
+          "unselectable": true,
+          "layers": [
+            {
+              "image_path": "assets/pager-16bit.png",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "x": 25,
+              "y": 100,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Добро пожаловать"
+            },
+            {
+              "x": 25,
+              "y": 120,
+              "text_size": "small",
+              "text_color_palette": "green",
+              "text": "Уведомления"
+            },
+            {
+              "x": 25,
+              "y": 140,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "PIN-код"
+            },
+            {
+              "x": 25,
+              "y": 160,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Пароль"
+            },
+            {
+              "x": 25,
+              "y": 180,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Часовой пояс"
+            },
+            {
+              "x": 25,
+              "y": 200,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Лицензия"
+            },
+            {
+              "image_path": "assets/triangle.png",
+              "x": 3,
+              "y": 120,
+              "recolor_palette": "green"
+            }
+          ]
+        },
+        {
+          "id": "setup2",
+          "selected_layers": [
+            {
+              "image_path": "assets/warning.png",
+              "recolor_palette": "green",
+              "x": 112,
+              "y": 13
+            },
+            {
+              "x": 142,
+              "y": 10,
+              "text": "УВЕДОМЛЕНИЕ: Температура",
+              "text_color_palette": "green",
+              "text_size": "medium",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x": 117,
+              "y": 60,
+              "text": "Обеспечьте достаточную вентиляцию.\n\nНЕ блокируйте вентиляционные\n\nотверстия. Экран будет ГОРЯЧИМ\n\nпри длительном использовании.",
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 3,
+      "menu_items": [
+        {
+          "id": "page3_bg",
+          "unselectable": true,
+          "layers": [
+            {
+              "image_path": "assets/pager-16bit.png",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "x": 25,
+              "y": 100,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Добро пожаловать"
+            },
+            {
+              "x": 25,
+              "y": 120,
+              "text_size": "small",
+              "text_color_palette": "green",
+              "text": "Уведомления"
+            },
+            {
+              "x": 25,
+              "y": 140,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "PIN-код"
+            },
+            {
+              "x": 25,
+              "y": 160,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Пароль"
+            },
+            {
+              "x": 25,
+              "y": 180,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Часовой пояс"
+            },
+            {
+              "x": 25,
+              "y": 200,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Лицензия"
+            },
+            {
+              "image_path": "assets/triangle.png",
+              "x": 3,
+              "y": 120,
+              "recolor_palette": "green"
+            }
+          ]
+        },
+        {
+          "id": "setup3",
+          "selected_layers": [
+            {
+              "image_path": "assets/warning.png",
+              "recolor_palette": "green",
+              "x": 112,
+              "y": 13
+            },
+            {
+              "x": 142,
+              "y": 10,
+              "text": "УВЕДОМЛЕНИЕ: Зарядка",
+              "text_color_palette": "green",
+              "text_size": "medium",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x": 117,
+              "y": 60,
+              "text": "Полностью заряжайте перед каждым\n\nиспользованием совместимым\n\nзарядным устройством.\n\nUSB-C зарядки смартфонов\n\nБольшинство USB-C портов ПК\n\nУзнайте больше: hak5.org/pager",
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "image_path": "assets/optiondialog/check.png",
+              "recolor_palette": "green",
+              "x": 117,
+              "y": 129
+            },
+            {
+              "image_path": "assets/optiondialog/x.png",
+              "recolor_palette": "red",
+              "x": 120,
+              "y": 161
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page_index": 4,
+      "menu_items": [
+        {
+          "id": "page4_bg",
+          "unselectable": true,
+          "layers": [
+            {
+              "image_path": "assets/pager-16bit.png",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "x": 25,
+              "y": 100,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Добро пожаловать"
+            },
+            {
+              "x": 25,
+              "y": 120,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Уведомления"
+            },
+            {
+              "x": 25,
+              "y": 140,
+              "text_size": "small",
+              "text_color_palette": "green",
+              "text": "PIN-код"
+            },
+            {
+              "x": 25,
+              "y": 160,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Пароль"
+            },
+            {
+              "x": 25,
+              "y": 180,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Часовой пояс"
+            },
+            {
+              "x": 25,
+              "y": 200,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Лицензия"
+            },
+            {
+              "image_path": "assets/triangle.png",
+              "x": 3,
+              "y": 140,
+              "recolor_palette": "green"
+            }
+          ]
+        },
+        {
+          "id": "setup4",
+          "selected_layers": [
+            {
+              "image_path": "assets/dashboard/settings.png",
+              "recolor_palette": "green",
+              "x": 117,
+              "y": 10
+            },
+            {
+              "x": 160,
+              "y": 10,
+              "text": "PIN-КОД",
+              "text_color_palette": "green",
+              "text_size": "medium",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x": 117,
+              "y": 60,
+              "text": "Вы можете установить PIN-код\n\nдля блокировки экрана.",
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "image_path": "assets/keyboard.png",
+              "recolor_palette": "green",
+              "x": 182,
+              "y": 136
+            },
+            {
+              "text": "Установить PIN-код",
+              "x": 225,
+              "y": 136,
+              "text_color_palette": "green"
+            },
+            {
+              "x": 117,
+              "y": 185,
+              "text": "Нажмите зелёную кнопку 'A' для установки PIN,\nили нажмите вниз, чтобы пока пропустить.",
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ],
+          "target": "edit_number_dialog",
+          "variable": "$_SYSTEM_PIN"
+        }
+      ]
+    },
+    {
+      "page_index": 5,
+      "menu_items": [
+        {
+          "id": "page5_bg",
+          "unselectable": true,
+          "layers": [
+            {
+              "image_path": "assets/pager-16bit.png",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "x": 25,
+              "y": 100,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Добро пожаловать"
+            },
+            {
+              "x": 25,
+              "y": 120,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Уведомления"
+            },
+            {
+              "x": 25,
+              "y": 140,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "PIN-код"
+            },
+            {
+              "x": 25,
+              "y": 160,
+              "text_size": "small",
+              "text_color_palette": "green",
+              "text": "Пароль"
+            },
+            {
+              "x": 25,
+              "y": 180,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Часовой пояс"
+            },
+            {
+              "x": 25,
+              "y": 200,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Лицензия"
+            },
+            {
+              "image_path": "assets/triangle.png",
+              "x": 3,
+              "y": 160,
+              "recolor_palette": "green"
+            }
+          ]
+        },
+        {
+          "id": "root_password",
+          "selected_layers": [
+            {
+              "image_path": "assets/dashboard/settings.png",
+              "recolor_palette": "green",
+              "x": 117,
+              "y": 10
+            },
+            {
+              "x": 160,
+              "y": 10,
+              "text": "ПАРОЛЬ ROOT",
+              "text_color_palette": "green",
+              "text_size": "medium",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x": 117,
+              "y": 60,
+              "text": "Установите пароль root для SSH\n\nи доступа к Virtual Pager.",
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "image_path": "assets/keyboard.png",
+              "recolor_palette": "green",
+              "x": 182,
+              "y": 136
+            },
+            {
+              "text": "Установить пароль",
+              "x": 225,
+              "y": 136,
+              "text_color_palette": "green"
+            },
+            {
+              "x": 117,
+              "y": 185,
+              "text": "Нажмите зелёную кнопку 'A' для установки\nпароля, затем нажмите вниз для продолжения.",
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_SYSTEM_PASSWORD"
+        }
+      ]
+    },
+    {
+      "page_index": 6,
+      "menu_items": [
+        {
+          "id": "page6_bg",
+          "unselectable": true,
+          "layers": [
+            {
+              "image_path": "assets/pager-16bit.png",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "x": 25,
+              "y": 100,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Добро пожаловать"
+            },
+            {
+              "x": 25,
+              "y": 120,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Уведомления"
+            },
+            {
+              "x": 25,
+              "y": 140,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "PIN-код"
+            },
+            {
+              "x": 25,
+              "y": 160,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Пароль"
+            },
+            {
+              "x": 25,
+              "y": 180,
+              "text_size": "small",
+              "text_color_palette": "green",
+              "text": "Часовой пояс"
+            },
+            {
+              "x": 25,
+              "y": 200,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Лицензия"
+            },
+            {
+              "image_path": "assets/triangle.png",
+              "x": 3,
+              "y": 180,
+              "recolor_palette": "green"
+            }
+          ]
+        },
+        {
+          "id": "set_timezone",
+          "selected_layers": [
+            {
+              "image_path": "assets/dashboard/settings.png",
+              "recolor_palette": "green",
+              "x": 117,
+              "y": 10
+            },
+            {
+              "x": 160,
+              "y": 10,
+              "text": "УСТАНОВКА ЧАСОВОГО ПОЯСА",
+              "text_color_palette": "green",
+              "text_size": "medium",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x": 117,
+              "y": 60,
+              "text": "Установите часовой пояс сейчас,\n\nчтобы включить обновления по воздуху.",
+              "text_color_palette": "disabled_light_gray",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "image_path": "assets/menu.png",
+              "recolor_palette": "green",
+              "x": 182,
+              "y": 136
+            },
+            {
+              "text": "Установить часовой пояс",
+              "x": 225,
+              "y": 136,
+              "text_color_palette": "green"
+            },
+            {
+              "x": 117,
+              "y": 185,
+              "text": "Нажмите зелёную кнопку 'A' для установки\nчасового пояса, затем вниз для продолжения.",
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            }
+          ],
+          "target": "option_dialog_narrow",
+          "variable": "$_TIMEZONE"
+        }
+      ]
+    },
+    {
+      "page_index": 7,
+      "menu_items": [
+        {
+          "id": "page7_bg",
+          "unselectable": true,
+          "layers": [
+            {
+              "image_path": "assets/pager-16bit.png",
+              "x": 10,
+              "y": 10
+            },
+            {
+              "x": 112,
+              "y": 13,
+              "image_path": "assets/warning.png",
+              "recolor_palette": "green"
+            },
+            {
+              "x": 142,
+              "y": 10,
+              "text": "Лицензия",
+              "text_color_palette": "green",
+              "text_size": "medium"
+            },
+            {
+              "x": 117,
+              "y": 120,
+              "text": "Этот инструмент для пентеста предназначен\nтолько для авторизованного аудита и\nанализа безопасности, где это разрешено.\nСогласно местным и международным законам.\nПользователи несут полную ответственность\nза соблюдение требований.\n\nHak5 LLC не несёт ответственности за\nнесанкционированное или незаконное использование.",
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small",
+              "max_chars": 42,
+              "wrap_text": true,
+              "max_lines": 10
+            },
+            {
+              "x": 25,
+              "y": 100,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Добро пожаловать"
+            },
+            {
+              "x": 25,
+              "y": 120,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Уведомления"
+            },
+            {
+              "x": 25,
+              "y": 140,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "PIN-код"
+            },
+            {
+              "x": 25,
+              "y": 160,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Пароль"
+            },
+            {
+              "x": 25,
+              "y": 180,
+              "text_size": "small",
+              "text_color_palette": "gray",
+              "text": "Часовой пояс"
+            },
+            {
+              "x": 25,
+              "y": 200,
+              "text_size": "small",
+              "text_color_palette": "green",
+              "text": "Лицензия"
+            },
+            {
+              "image_path": "assets/triangle.png",
+              "x": 3,
+              "y": 200,
+              "recolor_palette": "green"
+            }
+          ]
+        },
+        {
+          "id": "accept_eula",
+          "selected_layers": [
+            {
+              "x": 117,
+              "y": 64,
+              "variable_name": "$_EULA_ACCEPTED",
+              "use_template": "checkbox"
+            },
+            {
+              "x": 147,
+              "y": 60,
+              "text": "Принимаю соглашение",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 147,
+              "y": 75,
+              "text": "Полные условия: https://hak5.org/license",
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small"
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_EULA_ACCEPTED"
+        }
+      ]
+    },
+    {
+      "page_index": 8,
+      "menu_items": [
+        {
+          "id": "page8_bg",
+          "unselectable": true,
+          "layers": [
+            {
+              "x": 116,
+              "y": 10,
+              "text": "Поздравляем!",
+              "text_color_palette": "green",
+              "text_size": "medium"
+            },
+            {
+              "x": 200,
+              "y": 46,
+              "image_path": "assets/pager-16bit.png"
+            },
+            {
+              "text": "Ваш WiFi Pineapple Pager\nтеперь готов к использованию.",
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small",
+              "center_text_within": {
+                "draw_bounds": false,
+                "start_x": 162,
+                "end_x": 330,
+                "start_y": 120,
+                "end_y": 150
+              }
+            }
+          ]
+        },
+        {
+          "id": "finish_setup",
+          "layers": [
+            {
+              "x": 155,
+              "y": 160,
+              "text": "Перейти к панели",
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small"
+            }
+          ],
+          "selected_layers": [
+            {
+              "x": 155,
+              "y": 160,
+              "text": "Перейти к панели",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 135,
+              "y": 159,
+              "image_path": "assets/triangle.png",
+              "recolor_palette": "green"
+            }
+          ],
+          "target": "exit_setup_wizard"
+        },
+        {
+          "id": "tutorial",
+          "layers": [
+            {
+              "x": 210,
+              "y": 175,
+              "text": "Обучение",
+              "text_color_palette": "disabled_light_gray",
+              "text_size": "small"
+            }
+          ],
+          "selected_layers": [
+            {
+              "x": 210,
+              "y": 175,
+              "text": "Обучение",
+              "text_color_palette": "green",
+              "text_size": "small"
+            },
+            {
+              "x": 190,
+              "y": 175,
+              "image_path": "assets/triangle.png",
+              "recolor_palette": "green"
+            }
+          ],
+          "target": "tutorial"
+        }
+      ]
+    }
+  ]
+}

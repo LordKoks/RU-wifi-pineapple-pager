@@ -1,0 +1,532 @@
+{
+  "screen_name": "pineap_filters_submenu",
+  "status_bar": "default",
+  "windowed_canvas": false,
+  "cache_canvases": true,
+  "button_map": {
+    "a": "select",
+    "b": "back",
+    "up": "previous",
+    "down": "next",
+    "left": "back",
+    "right": "noop"
+  },
+  "background": {
+    "layers": [
+      {
+        "image_path": "assets/pineap_bg.png",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "image_path": "assets/divright.png",
+        "x": 140,
+        "y": 50
+      },
+      {
+        "text": "PineAP",
+        "x": 10,
+        "y": 50,
+        "text_color_palette": "gray"
+      },
+      {
+        "text": "Открытая точка",
+        "x": 10,
+        "y": 85,
+        "text_color_palette": "gray"
+      },
+      {
+        "text": "Злая WPA",
+        "x": 10,
+        "y": 120,
+        "text_color_palette": "gray"
+      },
+      {
+        "text": "Пул SSID",
+        "x": 10,
+        "y": 155,
+        "text_color_palette": "gray"
+      },
+      {
+        "text": "Фильтры",
+        "x": 10,
+        "y": 190,
+        "text_color_palette": "yellow"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "page_index": 0,
+      "menu_items": [
+        {
+          "id": "Client Filter",
+          "x": 170,
+          "y": 50,
+          "layers": [
+            {
+              "text": "Фильтр клиентов:",
+              "text_color_palette": "blue"
+            },
+            {
+              "variable_name": "$_FILTER_CLIENT_MODE",
+              "x": 200,
+              "toggle_template": {
+                "enabled": [
+                  {
+                    "image_path": "assets/swap.png",
+                    "x": 72,
+                    "y": 2,
+                    "recolor_palette": "gray"
+                  },
+                  {
+                    "text": "Разрешить",
+                    "text_size": "small",
+                    "text_color_palette": "green",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 360,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ],
+                "disabled": [
+                  {
+                    "image_path": "assets/swap.png",
+                    "x": 72,
+                    "y": 2,
+                    "recolor_palette": "gray"
+                  },
+                  {
+                    "text": "Запретить",
+                    "text_size": "small",
+                    "text_color_palette": "red",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 360,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "selected_layers": [
+            {
+              "text": "Фильтр клиентов:",
+              "text_color_palette": "yellow"
+            },
+            {
+              "variable_name": "$_FILTER_CLIENT_MODE",
+              "x": 200,
+              "toggle_template": {
+                "enabled": [
+                  {
+                    "image_path": "assets/swap.png",
+                    "x": 72,
+                    "y": 2,
+                    "recolor_palette": "gray"
+                  },
+                  {
+                    "text": "Разрешить",
+                    "text_size": "small",
+                    "text_color_palette": "green",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 360,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ],
+                "disabled": [
+                  {
+                    "image_path": "assets/swap.png",
+                    "x": 72,
+                    "y": 2,
+                    "recolor_palette": "gray"
+                  },
+                  {
+                    "text": "Запретить",
+                    "text_size": "small",
+                    "text_color_palette": "red",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 360,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_FILTER_CLIENT_MODE"
+        },
+        {
+          "id": "Список разрешённых клиентов",
+          "x": 170,
+          "y": 85,
+          "layers": [
+            {
+              "image_path": "assets/menu.png"
+            },
+            {
+              "text": "Список разрешённых клиентов",
+              "x": 40,
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/menu.png"
+            },
+            {
+              "text": "Список разрешённых клиентов",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_CLIENT_ALLOW_LIST"
+        },
+        {
+          "id": "Список запрещённых клиентов",
+          "x": 170,
+          "y": 120,
+          "layers": [
+            {
+              "image_path": "assets/menu.png"
+            },
+            {
+              "text": "Список запрещённых клиентов",
+              "x": 40,
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/menu.png"
+            },
+            {
+              "text": "Список запрещённых клиентов",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_CLIENT_DENY_LIST"
+        },
+        {
+          "id": "Добавить разрешённого клиента",
+          "x": 170,
+          "y": 155,
+          "layers": [
+            {
+              "image_path": "assets/keyboard.png"
+            },
+            {
+              "text": "Добавить разрешённого клиента",
+              "x": 40,
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard.png"
+            },
+            {
+              "text": "Добавить разрешённого клиента",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_FILTER_CLIENT_ALLOW_ADD"
+        },
+        {
+          "id": "Добавить запрещённого клиента",
+          "x": 170,
+          "y": 190,
+          "layers": [
+            {
+              "image_path": "assets/keyboard.png"
+            },
+            {
+              "text": "Добавить запрещённого клиента",
+              "x": 40,
+              "text_color_palette": "blue"
+            },
+            {
+              "image_path": "assets/down.png",
+              "x": -20,
+              "y": 10,
+              "recolor_palette": "gray"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard.png"
+            },
+            {
+              "text": "Добавить запрещённого клиента",
+              "x": 40,
+              "text_color_palette": "yellow"
+            },
+            {
+              "image_path": "assets/down.png",
+              "x": -20,
+              "y": 10,
+              "recolor_palette": "gray"
+            }
+          ],
+          "target": "edit_mac_dialog",
+          "variable": "$_FILTER_CLIENT_DENY_ADD"
+        }
+      ]
+    },
+    {
+      "page_index": 1,
+      "menu_items": [
+        {
+          "id": "Network Filter",
+          "x": 170,
+          "y": 50,
+          "layers": [
+            {
+              "text": "Фильтр сети:",
+              "text_color_palette": "blue"
+            },
+            {
+              "variable_name": "$_FILTER_NETWORK_MODE",
+              "x": 200,
+              "toggle_template": {
+                "enabled": [
+                  {
+                    "image_path": "assets/swap.png",
+                    "x": 72,
+                    "y": 2,
+                    "recolor_palette": "gray"
+                  },
+                  {
+                    "text": "Разрешить",
+                    "text_size": "small",
+                    "text_color_palette": "green",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 370,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ],
+                "disabled": [
+                  {
+                    "image_path": "assets/swap.png",
+                    "x": 72,
+                    "y": 2,
+                    "recolor_palette": "gray"
+                  },
+                  {
+                    "text": "Запретить",
+                    "text_size": "small",
+                    "text_color_palette": "red",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 370,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "image_path": "assets/up.png",
+              "x": -20,
+              "y": -4,
+              "recolor_palette": "gray"
+            }
+          ],
+          "selected_layers": [
+            {
+              "text": "Фильтр сети:",
+              "text_color_palette": "yellow"
+            },
+            {
+              "variable_name": "$_FILTER_NETWORK_MODE",
+              "x": 200,
+              "toggle_template": {
+                "enabled": [
+                  {
+                    "image_path": "assets/swap.png",
+                    "x": 72,
+                    "y": 2,
+                    "recolor_palette": "gray"
+                  },
+                  {
+                    "text": "Разрешить",
+                    "text_size": "small",
+                    "text_color_palette": "green",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 370,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ],
+                "disabled": [
+                  {
+                    "image_path": "assets/swap.png",
+                    "x": 72,
+                    "y": 2,
+                    "recolor_palette": "gray"
+                  },
+                  {
+                    "text": "Запретить",
+                    "text_size": "small",
+                    "text_color_palette": "red",
+                    "center_text_within": {
+                      "draw_bounds": false,
+                      "start_x": 370,
+                      "end_x": 440,
+                      "start_y": 45,
+                      "end_y": 71
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "image_path": "assets/up.png",
+              "x": -20,
+              "y": -4,
+              "recolor_palette": "gray"
+            }
+          ],
+          "target": "inline_toggle",
+          "variable": "$_FILTER_NETWORK_MODE"
+        },
+        {
+          "id": "Список разрешённых сетей",
+          "x": 170,
+          "y": 85,
+          "layers": [
+            {
+              "image_path": "assets/menu.png"
+            },
+            {
+              "text": "Список разрешённых сетей",
+              "x": 40,
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/menu.png"
+            },
+            {
+              "text": "Список разрешённых сетей",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_NETWORK_ALLOW_LIST"
+        },
+        {
+          "id": "Список запрещённых сетей",
+          "x": 170,
+          "y": 120,
+          "layers": [
+            {
+              "image_path": "assets/menu.png"
+            },
+            {
+              "text": "Список запрещённых сетей",
+              "x": 40,
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/menu.png"
+            },
+            {
+              "text": "Список запрещённых сетей",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
+          ],
+          "target": "filter_list",
+          "variable": "$_FILTER_NETWORK_DENY_LIST"
+        },
+        {
+          "id": "Добавить разрешённую сеть",
+          "x": 170,
+          "y": 155,
+          "layers": [
+            {
+              "image_path": "assets/keyboard.png"
+            },
+            {
+              "text": "Добавить разрешённую сеть",
+              "x": 40,
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard.png"
+            },
+            {
+              "text": "Добавить разрешённую сеть",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_FILTER_NETWORK_ALLOW_ADD"
+        },
+        {
+          "id": "Добавить запрещённую сеть",
+          "x": 170,
+          "y": 190,
+          "layers": [
+            {
+              "image_path": "assets/keyboard.png"
+            },
+            {
+              "text": "Добавить запрещённую сеть",
+              "x": 40,
+              "text_color_palette": "blue"
+            }
+          ],
+          "selected_layers": [
+            {
+              "image_path": "assets/keyboard.png"
+            },
+            {
+              "text": "Добавить запрещённую сеть",
+              "x": 40,
+              "text_color_palette": "yellow"
+            }
+          ],
+          "target": "edit_string_dialog",
+          "variable": "$_FILTER_NETWORK_DENY_ADD"
+        }
+      ]
+    }
+  ]
+}
