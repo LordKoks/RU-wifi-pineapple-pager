@@ -16,7 +16,8 @@
 
 1.  **Загрузите тему на Пейджер** (с вашего ПК):
     ```bash
-    scp -r wargames root@172.16.52.1:/lib/pager/themes/
+    
+    scp -r ./wargames root@172.16.52.1:/root/themes/russian_theme/
 
 2. Возьмите пейджер и в настройках найдите в первом раздели Theme:
    Поменяёте на ---> russian_theme
